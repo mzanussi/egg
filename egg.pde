@@ -18,15 +18,19 @@ void draw() {
   
   stroke(255,0,0);
   point(x(i), y(i));
+  stroke(100,0,0);
+  line(0,0,x(i),y(i));
+  stroke(255,0,0);
   point(y(i), x(i));
+  stroke(100,0,0);
+  line(0,0,y(i),x(i));
   stroke(0,255,0);
   point(x(i), -y(i));
   point(-y(i), x(i));
   if (i > PI) {
     noLoop();
-    //i = 0.0;
   } else {
-    i = i + .1;
+    i = i + .05;
   }
   
 }
